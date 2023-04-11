@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Templater</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- <entry>
+			<div>
+				<div x-make="remove:1">Блок 1</div>
+				<div x-make="copy:3">Блок 2</div>
+			</div>
+		</entry> -->
+
+		<!-- <entry>
+    <div x-make="removeChildren:2">
+        <div x-make="copy:100">Блок 1</div>
+        <div>Блок 2</div>
+        <div x-make="switch:7">Блок 3</div>
+        <div>Блок 4</div>
+        <div>Блок 5</div>
+    </div>
+</entry>  -->
+
+		<!-- <entry>
+    <section>
+        <div x-make="switch:2">
+            <div x-make="remove:5">Блок 1</div>
+            <span>Блок 2</span>
+        </div>
+        <div x-make="copy:1">
+            <div x-make="remove:5">Блок 3</div>
+            <div x-make="switch:1">Блок 4</div>
+        </div>
+        <p>Блок 5</p>
+    </section>
+</entry>  -->
+
+		<entry>
+			<div x-make="switch:2">1</div>
+			<div x-make="switch:3">2</div>
+			<div x-make="switch:5">3</div>
+		</entry>
+
+		<script src="index.js"></script>
+	</body>
+</html>
