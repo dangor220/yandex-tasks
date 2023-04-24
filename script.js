@@ -8,7 +8,9 @@ module.exports = function (configValue) {
 			if (typeof obj[key] === 'function') {
 				dynamicKeys.push(key);
 				dynamicValues.push(obj[key]());
-			}
+			} else if (typeof obj[key] === "object" && obj[key] !== null) {
+        obj[key] = makeDynamicConfig(obj[key]);
+      }
 		}
 
 		// Вернуть прокси-объект, который будет перехватывать обращения
